@@ -24,5 +24,10 @@ public class SampleSpringRestApplicationTests {
         Assert.assertTrue(true);
     }
 
+    @Test
+    public void test3() {
+        Assert.assertTrue(true);
+    }
+
 }
 
