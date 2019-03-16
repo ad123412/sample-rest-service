@@ -12,9 +12,8 @@ pipeline {
             }
         }
         stage('Build') { 
-            steps { 
-               echo 'This is a minimal pipeline.' 
-               sh "mvn clean package"
+            steps {
+               sh 'mvn clean test'
             }
             post {
                 success {
