@@ -14,7 +14,7 @@ pipeline {
         stage('Build') { 
             steps {
                echo 'maven will run the junit test and build and create the artifacts'
-               bat 'mvn clean package'
+               sh 'mvn clean package'
             }
             post {
                 success {
